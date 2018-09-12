@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>网页通信</title>
+</head>
+<body>
+<h1>接收到的数据：</h1>
+<h2>hint</h2>
+<input type="toandroid" id="q" placeholder="请输入需要发送的内容">
+<input type="submit" id="send" value="发送">
+<script>
+var reqStr=document.querySelector('h2');
+var sendStr=document.getElementById('q');
+var sendBtn=document.getElementById('send');
+
+reqStr.textContent="啦啦";
+sendStr.value="123";
+
+sendBtn.onclick=function(){
+	androidjs.setContent(sendStr.value);
+};
+
+var remote=function(str){
+reqStr.textContent=str;
+}
+</script>
+</body>
+</html>
