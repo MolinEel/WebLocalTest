@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.molin.lee.Permission.PermissionActivity;
 import com.molin.lee.sensortest.SonserTestActivity;
 import com.molin.lee.weblocaltest.WebAndLocalCorrespondActivity;
 
@@ -23,6 +24,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void toSonserTest(View v){
         Intent intent = new Intent(this, SonserTestActivity.class);
+        startActivity(intent);
+    }
+
+    public void toPermissionTest(View view){
+        Intent intent=new Intent(this,PermissionActivity.class);
         startActivity(intent);
     }
 }

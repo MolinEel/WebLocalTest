@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".sensortest.SonserTestActivity">
         </activity>
+        <activity android:name=".Permission.PermissionActivity">
+        </activity>
     </application>
 
 </manifest>

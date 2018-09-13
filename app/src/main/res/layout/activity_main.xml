@@ -18,4 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="传感器"/>
+    <Button
+        android:onClick="toPermissionTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="动态获取权限"/>
 </LinearLayout>
